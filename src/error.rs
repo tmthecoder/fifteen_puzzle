@@ -2,6 +2,8 @@ use std::error::Error;
 use std::fmt::{Display, Formatter};
 use std::io;
 
+/// Error type for the game, mainly built to propagate the Exit code as well as any other
+/// unexpected errors
 #[derive(Debug)]
 pub enum GameError {
     Exit,
